@@ -213,9 +213,9 @@ Visuals: Apps Distribution (Free vs Paid), Content Rating: Free vs Paid heatmap,
 📸 **Screenshot:**
 
 
-**Answer:** ⚠️ **[ADD the 5 app names and install counts from your "Top 5 Most Installed Apps" sheet]**
+**Answer:** The table lists Facebook, WhatsApp Messenger, Instagram, Messenger – Text and Video Chat for Free, and Subway Surfers. Each is displayed as having 1B installs.
 
-**Insight:** These apps are the benchmark for marketing and retention. Study what they have in common (category, size, update cadence).
+**Insight:** These apps are the benchmark for marketing and retention.
 
 ---
 
@@ -280,7 +280,6 @@ Visuals: Apps Distribution (Free vs Paid), Content Rating: Free vs Paid heatmap,
 ---
 
 ### Q12. Which app categories have the highest average rating?
-
 
 **Answer:**
 | Rank | Category | Avg Rating |
