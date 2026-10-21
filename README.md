@@ -402,7 +402,11 @@ For the biggest categories in the Tableau view: Game 4.25 and Social 4.25 lead, 
 
 ### Q21. Top 10 highest-rated apps: how do reviews and installs compare? 📎
 
-**Answer:** 
+**Answer:** After filtering for apps with more than 100K reviews, the top 10 all rate between 4.8 and 4.9. Learn Japanese, Korean... has a rating of 4.9, with 133.1K reviews and 1 million installs.
+- JW Library has a rating of 4.9, with 922.8K reviews and 10 million installs.
+- Six Pack in 30 Days has a rating of 4.9, with 272.3K reviews and 10 million installs.
+- PewDiePie's Tuber Simulator has a rating of 4.8, with 1.5 million reviews and 10 million installs.
+- DU Recorder has a rating of 4.8, with 2.6 million reviews and 50 million installs, making it the most reviewed and most installed app among the ten shown.
 
 
 ---
