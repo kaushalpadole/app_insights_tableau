@@ -1,21 +1,32 @@
 # 📱 App Insights Unlocked: Google Play Store Analytics (Tableau)
 
-> An end-to-end analytics case study on 9,600+ Google Play Store apps: data analysed and visualised in **Tableau** with calculated fields, parameters and two interactive dashboards. It answers 25 business questions (basic → advanced) and ends with recommendations for an app-development company.
-
+> An end-to-end analytics case study on 9,600+ Google Play Store apps: data analysed and visualised in Tableau with calculated fields, parameters and two interactive dashboards. It answers 25 business questions using cleaned market data and helps identify what drives app success across categories and app types.
 
 ---
 
 ## 📌 Table of Contents
-1. [Business Problem](#-business-problem)
-2. [Dataset](#-dataset)
-3. [Tools & Skills](#-tools--skills)
-4. [Data Cleaning in Excel](#-data-cleaning-in-excel)
-5. [Tableau Calculated Fields & Parameters](#-tableau-calculated-fields--parameters)
-6. [Dashboard Overview](#-dashboard-overview)
-7. [Basic-Level Questions](#-basic-level-questions)
-8. [Medium-Level Questions](#-medium-level-questions)
-9. [Advanced-Level Questions](#-advanced-level-questions)
-10. [Key Recommendations](#-key-recommendations)
+1. [Project Overview](#-project-overview)
+2. [Business Problem](#-business-problem)
+3. [Project Requirements](#-project-requirements)
+4. [Dataset](#-dataset)
+5. [Tools & Technologies](#-tools--technologies)
+6. [Data Cleaning in Excel](#-data-cleaning-in-excel)
+7. [Tableau Calculated Fields & Parameters](#-tableau-calculated-fields--parameters)
+8. [Challenges Faced](#-challenges-faced)
+9. [Key Insights](#-key-insights)
+10. [Dashboard Overview](#-dashboard-overview)
+11. [Key Recommendations](#-key-recommendations)
+12. [Suggested Improvements](#-suggested-improvements)
+
+---
+
+## 🎯 Project Overview
+
+This project was created to explore one of the most competitive digital markets: the Google Play Store. The goal was to turn a raw dataset of mobile apps into business-ready insights for understanding app performance, customer preferences, pricing behaviour, and category-level opportunities.
+
+The analysis focused on identifying what contributes to an app's success and how product teams can use these findings to improve their own app strategy. Rather than just describing the market, the project also aims to support real business decisions — what categories to enter, what pricing strategy to use, what rating targets to aim for, and how to build more competitive app offerings.
+
+The project combines data cleaning, business analysis, and dashboard storytelling to generate a complete analytics narrative from raw app records to strategic recommendations.
 
 ---
 
@@ -26,6 +37,22 @@ A mobile-app company has acquired Google Play Store data. Management wants to kn
 - What do the data say about user preferences and behaviour?
 
 **Stakeholders:** App Developers, Product Managers, Marketing Team, Senior Management (internal); App Users, Advertisers, Partners (external).
+
+---
+
+## ✅ Project Requirements
+
+This project required a practical and structured analytical approach:
+
+- Work with a real-world mobile app dataset from the Google Play Store.
+- Clean and standardize inconsistent raw values before analysis.
+- Understand key performance metrics such as installs, ratings, reviews, price, and size.
+- Segment the market by category, app type, and value tiers.
+- Build interactive dashboards that communicate insights clearly.
+- Translate findings into actionable business recommendations.
+- Ensure that conclusions are based on reliable, cleaned data rather than raw inconsistencies.
+
+The project also required balancing technical accuracy with business clarity, so the final output could be understood by both analysts and decision-makers.
 
 ---
 
@@ -52,14 +79,17 @@ A mobile-app company has acquired Google Play Store data. Management wants to kn
 
 ---
 
-## 🛠 Tools & Skills
+## 🛠 Tools & Technologies
 - **Microsoft Excel:** data cleaning and preparation
 - **Tableau:** calculated fields, parameters, bins/bands, dual dashboards, interactive filters
 - **Concepts:** data cleaning, KPI design, binned analysis, dashboard storytelling
+- **Business Analytics:** market segmentation, app performance evaluation, growth opportunity analysis
+
+These tools were selected because they are well-suited for turning raw business data into clear visual and strategic insights. Excel handled the heavy lifting of data preparation, while Tableau brought the outputs to life through interactive dashboards.
 
 ---
 
-## 🧹 Data Cleaning 
+## 🧹 Data Cleaning in Excel
 
 | Step | What I did | Why |
 |---|---|---|
@@ -74,13 +104,15 @@ A mobile-app company has acquired Google Play Store data. Management wants to kn
 | **Date formatting** | Converted `Last Updated` to a date and extracted `Update_Year`, `Update_Month` | Trend analysis |
 | **Helper columns** | Created `Install_Tier` and `Rating_4Plus` flag | Faster analysis in Tableau |
 
+Data cleaning was not a minor step in this project — it was essential to the validity of the results. Without cleaning, the marketplace analysis would be heavily skewed by inconsistent values and incomplete records.
+
 ---
 
 ## 🧮 Tableau Calculated Fields & Parameters
 
 ```text
 -- Installs Number (from text, if needed)
-FLOAT( REPLACE( REPLACE([Installs], ",", ""), "+", "" ) )
+FLOAT( REPLACE( REPLACE([Installs], ",", ""), "+", "") )
 
 -- Size MB
 IF RIGHT([Size],1) = "M" THEN FLOAT(LEFT([Size], LEN([Size])-1))
@@ -135,6 +167,51 @@ MAX([Rating]) * 100000000 + MAX([Reviews])
 
 ---
 
+## ⚠️ Challenges Faced
+
+This project involved several real-world data challenges:
+
+1. **Inconsistent data formats**  
+   Install counts, prices, size values, and dates appeared in varying formats that required structuring before analysis.
+
+2. **Missing and invalid data**  
+   Some data points were blank or corrupted, which could have distorted the findings if not handled carefully.
+
+3. **Duplicate records**  
+   Repeated app entries needed removal to avoid inflating install and review totals.
+
+4. **Segmenting the market correctly**  
+   A raw category list alone was not enough; additional groupings such as install tiers and price bands were needed for interpreting market behavior.
+
+5. **Avoiding misleading conclusions**  
+   Very small or low-volume apps could skew metrics like average rating, so thresholds like `Min Reviews` were implemented to improve analysis quality.
+
+6. **Balancing simplicity and depth**  
+   The dashboard needed to be easy for stakeholders to read while still supporting deeper analysis and filtering.
+
+These challenges reinforced the importance of strong data preparation and thoughtful dashboard design.
+
+---
+
+## 📈 Key Insights
+
+The analysis generated several important insights:
+
+- The market includes more than **9,637 apps** across **33 categories**.
+- Total installs reached **75.22 B**, indicating a massive and highly active mobile app ecosystem.
+- **Free apps dominate** the market, with around **92.6%** available at no cost.
+- **Games** and **Communication** categories lead in installs, showing strong user demand in entertainment and connectivity.
+- The overall **average app rating is 4.17**, suggesting a generally positive user experience in the market.
+- Around **6,282 apps** hold a rating of **4.0 or above**, indicating a large concentration of well-performing apps.
+- Niche categories such as **Events**, **Art & Design**, and **Education** show strong average ratings, creating potential opportunity areas.
+- Price does not necessarily destroy satisfaction in the mid-range; many apps continue to receive strong ratings at moderate price points.
+- App size varies by category, and optimizing asset size is especially important for mobile-heavy app types such as games.
+- Update frequency and freshness matter, as a large share of app performance is associated with recent maintenance and product evolution.
+
+These insights show that successful apps are shaped by more than a single metric; they are influenced by a combination of product quality, pricing, category demand, review volume, and user experience.
+
+---
+
 ## 📊 Dashboard Overview
 
 **Dashboard 1: APP INSIGHTS (executive summary)**
@@ -151,15 +228,9 @@ Visuals: Apps Distribution (Free vs Paid), Content Rating: Free vs Paid heatmap,
 
 <img width="600" height="400" alt="Screenshot 2026-10-10 230959" src="https://github.com/user-attachments/assets/21689c0c-18fd-43dc-aee4-bcd8cc6dacbc" />
 
-
 **Dashboard 2:** Most Reviewed Apps · Price vs Avg Rating · Total Apps By Installs · Size vs Installs
 
 <img width="700" height="500" alt="Screenshot 2026-10-10 232522" src="https://github.com/user-attachments/assets/375fbebf-79e9-4efb-9922-afb10aae5800" />
-
-
----
-
-
 
 ---
 
@@ -172,5 +243,28 @@ Visuals: Apps Distribution (Free vs Paid), Content Rating: Free vs Paid heatmap,
 6. **Optimise size by category:** keep utilities near 8–12 MB, and compress assets for games (33–49 MB average).
 7. **Design for "Everyone":** ~82% of apps use this rating, giving the widest reach.
 8. **Keep apps fresh and benchmark with volume:** about two-thirds of apps were updated in 2018, and comparisons should use apps with 1,000+ reviews (the `Min Reviews` parameter).
+
+---
+
+## 💡 Suggested Improvements
+
+To strengthen the project further, these improvements would be valuable:
+
+- Add app retention and engagement metrics to measure long-term value rather than just installs and ratings.
+- Include developer and publisher-level analysis to compare performance across competitors and categories.
+- Expand the dataset geographically to understand regional market differences.
+- Add sentiment analysis on app reviews to capture qualitative user feedback.
+- Create a more advanced forecasting model to predict app success potential based on pricing, category, size, and rating patterns.
+- Add interactive drill-throughs in Tableau for category-specific and pricing-specific storytelling.
+
+These additions would turn this project into a more complete decision-support dashboard for product strategy and market opportunity analysis.
+
+---
+
+## Final Takeaway
+
+This project demonstrates how raw marketplace data can be transformed into strategic business intelligence. By combining Excel-based cleaning and Tableau dashboards, the analysis reveals not only what is happening in the app market, but also why it is happening and what it means for future product decisions.
+
+The biggest lesson from the project is that analytics is most useful when it supports action. The insights gathered here can guide app design, pricing, targeting, market selection, and product improvements in a way that is grounded in real user and market behavior.
 
 ---
