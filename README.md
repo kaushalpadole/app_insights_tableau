@@ -58,8 +58,6 @@ The project also required balancing technical accuracy with business clarity, so
 
 ## 🗂 Dataset
 - **Source:** [Kaggle: Google Play Store Apps](https://www.kaggle.com/datasets/lava18/google-play-store-apps?select=googleplaystore.csv)
-- **Raw file:** `googleplaystore.csv` → **Cleaned file (Excel):** `googleplaystore_looker_clean.csv`
-- **After cleaning:** **9,637 apps** across **33 categories**
 
 | Column | Description |
 |---|---|
@@ -89,7 +87,7 @@ These tools were selected because they are well-suited for turning raw business 
 
 ---
 
-## 🧹 Data Cleaning in Excel
+##  Data Cleaning
 
 | Step | What I did | Why |
 |---|---|---|
@@ -104,11 +102,9 @@ These tools were selected because they are well-suited for turning raw business 
 | **Date formatting** | Converted `Last Updated` to a date and extracted `Update_Year`, `Update_Month` | Trend analysis |
 | **Helper columns** | Created `Install_Tier` and `Rating_4Plus` flag | Faster analysis in Tableau |
 
-Data cleaning was not a minor step in this project — it was essential to the validity of the results. Without cleaning, the marketplace analysis would be heavily skewed by inconsistent values and incomplete records.
-
 ---
 
-## 🧮 Tableau Calculated Fields & Parameters
+## Tableau Calculated Fields & Parameters
 
 ```text
 -- Installs Number (from text, if needed)
@@ -246,25 +242,17 @@ Visuals: Apps Distribution (Free vs Paid), Content Rating: Free vs Paid heatmap,
 
 ---
 
-## 💡 Suggested Improvements
+## Conclusion
 
-To strengthen the project further, these improvements would be valuable:
+The Google Play Store Analytics project demonstrates how Tableau can be used to convert application data into interactive visualizations and business insights.
 
-- Add app retention and engagement metrics to measure long-term value rather than just installs and ratings.
-- Include developer and publisher-level analysis to compare performance across competitors and categories.
-- Expand the dataset geographically to understand regional market differences.
-- Add sentiment analysis on app reviews to capture qualitative user feedback.
-- Create a more advanced forecasting model to predict app success potential based on pricing, category, size, and rating patterns.
-- Add interactive drill-throughs in Tableau for category-specific and pricing-specific storytelling.
+By analyzing installations, ratings, reviews, pricing, genres, and application sizes, the project helps identify performance patterns and areas for further investigation.
 
-These additions would turn this project into a more complete decision-support dashboard for product strategy and market opportunity analysis.
+The analysis also highlights the importance of evaluating multiple indicators together. Ratings, popularity, and review volume provide different perspectives on application performance, while additional retention, revenue, and historical data would support stronger business decisions.
 
----
+The resulting dashboards provide a foundation for exploring the app market, comparing applications, and identifying opportunities to improve product quality and user satisfaction.
 
-## Final Takeaway
-
-This project demonstrates how raw marketplace data can be transformed into strategic business intelligence. By combining Excel-based cleaning and Tableau dashboards, the analysis reveals not only what is happening in the app market, but also why it is happening and what it means for future product decisions.
-
-The biggest lesson from the project is that analytics is most useful when it supports action. The insights gathered here can guide app design, pricing, targeting, market selection, and product improvements in a way that is grounded in real user and market behavior.
-
----
+Project: Google Play Store Analytics Dashboard
+Tool: Tableau
+Domain: App Market Analytics and Data Visualization
+Dataset: Google Play Store Apps
