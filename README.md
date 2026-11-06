@@ -1,10 +1,10 @@
-# 📱 App Insights Unlocked: Google Play Store Analytics (Tableau)
+# App Insights Unlocked: Google Play Store Analytics (Tableau)
 
 > An end-to-end analytics case study on 9,600+ Google Play Store apps: data analysed and visualised in Tableau with calculated fields, parameters and two interactive dashboards. It answers 25 business questions using cleaned market data and helps identify what drives app success across categories and app types.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 1. [Project Overview](#-project-overview)
 2. [Business Problem](#-business-problem)
 3. [Project Requirements](#-project-requirements)
@@ -20,7 +20,7 @@
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This project was created to explore one of the most competitive digital markets: the Google Play Store. The goal was to turn a raw dataset of mobile apps into business-ready insights for understanding app performance, customer preferences, pricing behaviour, and category-level opportunities.
 
@@ -30,7 +30,7 @@ The project combines data cleaning, business analysis, and dashboard storytellin
 
 ---
 
-## 🎯 Business Problem
+## Business Problem
 A mobile-app company has acquired Google Play Store data. Management wants to know:
 - What factors contribute to an app's success (ratings, installs, reviews)?
 - How can the company use those factors to improve its own apps?
@@ -40,7 +40,7 @@ A mobile-app company has acquired Google Play Store data. Management wants to kn
 
 ---
 
-## ✅ Project Requirements
+## Project Requirements
 
 This project required a practical and structured analytical approach:
 
@@ -56,7 +56,7 @@ The project also required balancing technical accuracy with business clarity, so
 
 ---
 
-## 🗂 Dataset
+## Dataset
 - **Source:** [Kaggle: Google Play Store Apps](https://www.kaggle.com/datasets/lava18/google-play-store-apps?select=googleplaystore.csv)
 
 | Column | Description |
@@ -77,7 +77,7 @@ The project also required balancing technical accuracy with business clarity, so
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 - **Microsoft Excel:** data cleaning and preparation
 - **Tableau:** calculated fields, parameters, bins/bands, dual dashboards, interactive filters
 - **Concepts:** data cleaning, KPI design, binned analysis, dashboard storytelling
@@ -163,7 +163,7 @@ MAX([Rating]) * 100000000 + MAX([Reviews])
 
 ---
 
-## ⚠️ Challenges Faced
+## Challenges Faced
 
 This project involved several real-world data challenges:
 
@@ -189,7 +189,7 @@ These challenges reinforced the importance of strong data preparation and though
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 
 The analysis generated several important insights:
 
@@ -208,7 +208,7 @@ These insights show that successful apps are shaped by more than a single metric
 
 ---
 
-## 📊 Dashboard Overview
+## Dashboard Overview
 
 **Dashboard 1: APP INSIGHTS (executive summary)**
 
@@ -230,7 +230,7 @@ Visuals: Apps Distribution (Free vs Paid), Content Rating: Free vs Paid heatmap,
 
 ---
 
-## 🚀 Key Recommendations
+## Key Recommendations
 1. **Target proven demand:** Game and Communication each exceed 11 B installs, and the top 5 categories hold ~58% of all installs.
 2. **Look for niche opportunities:** Events, Art & Design and Education have the highest average ratings, a sign of satisfied users in less crowded spaces.
 3. **Launch at 4.2+:** the market average is 4.17 and about 65% of apps are rated 4.0+.
