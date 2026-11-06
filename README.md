@@ -7,14 +7,14 @@
 ## Table of Contents
 1. [Project Overview](#-project-overview)
 2. [Business Problem](#-business-problem)
-3. [Project Requirements](#-project-requirements)
-4. [Dataset](#-dataset)
-5. [Tools & Technologies](#-tools--technologies)
-6. [Data Cleaning in Excel](#-data-cleaning-in-excel)
-7. [Tableau Calculated Fields & Parameters](#-tableau-calculated-fields--parameters)
-8. [Challenges Faced](#-challenges-faced)
-9. [Key Insights](#-key-insights)
-10. [Dashboard Overview](#-dashboard-overview)
+3. [Dashboard Overview](#-dashboard-overview)
+4. [Project Requirements](#-project-requirements)
+5. [Dataset](#-dataset)
+6. [Tools & Technologies](#-tools--technologies)
+7. [Data Cleaning in Excel](#-data-cleaning-in-excel)
+8. [Tableau Calculated Fields & Parameters](#-tableau-calculated-fields--parameters)
+9. [Challenges Faced](#-challenges-faced)
+10. [Key Insights](#-key-insights)
 11. [Key Recommendations](#-key-recommendations)
 12. [Suggested Improvements](#-suggested-improvements)
 
@@ -37,6 +37,28 @@ A mobile-app company has acquired Google Play Store data. Management wants to kn
 - What do the data say about user preferences and behaviour?
 
 **Stakeholders:** App Developers, Product Managers, Marketing Team, Senior Management (internal); App Users, Advertisers, Partners (external).
+
+---
+
+## Dashboard Overview
+
+**Dashboard 1: APP INSIGHTS (executive summary)**
+
+| KPI | Value |
+|---|---|
+| Total Installs | **75.22 B** |
+| Total Apps | **9,637** |
+| Avg. Rating | **4.17** |
+| Categories | **33** |
+| Apps With Rating 4+ | **6,282** |
+
+Visuals: Apps Distribution (Free vs Paid), Content Rating: Free vs Paid heatmap, Top 5 Categories By Installs, Updates Trend.
+
+<img width="800" height="400" alt="Screenshot 2026-10-10 230959" src="https://github.com/user-attachments/assets/21689c0c-18fd-43dc-aee4-bcd8cc6dacbc" />
+
+**Dashboard 2:** Most Reviewed Apps · Price vs Avg Rating · Total Apps By Installs · Size vs Installs
+
+<img width="800" height="500" alt="Screenshot 2026-10-10 232522" src="https://github.com/user-attachments/assets/375fbebf-79e9-4efb-9922-afb10aae5800" />
 
 ---
 
@@ -207,27 +229,6 @@ The analysis generated several important insights:
 These insights show that successful apps are shaped by more than a single metric; they are influenced by a combination of product quality, pricing, category demand, review volume, and user experience.
 
 ---
-
-## Dashboard Overview
-
-**Dashboard 1: APP INSIGHTS (executive summary)**
-
-| KPI | Value |
-|---|---|
-| Total Installs | **75.22 B** |
-| Total Apps | **9,637** |
-| Avg. Rating | **4.17** |
-| Categories | **33** |
-| Apps With Rating 4+ | **6,282** |
-
-Visuals: Apps Distribution (Free vs Paid), Content Rating: Free vs Paid heatmap, Top 5 Categories By Installs, Updates Trend.
-
-<img width="600" height="400" alt="Screenshot 2026-10-10 230959" src="https://github.com/user-attachments/assets/21689c0c-18fd-43dc-aee4-bcd8cc6dacbc" />
-
-**Dashboard 2:** Most Reviewed Apps · Price vs Avg Rating · Total Apps By Installs · Size vs Installs
-
-<img width="700" height="500" alt="Screenshot 2026-10-10 232522" src="https://github.com/user-attachments/assets/375fbebf-79e9-4efb-9922-afb10aae5800" />
-
 ---
 
 ## Key Recommendations
